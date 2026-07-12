@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-Hant" data-theme="dark">
+<html lang="zh-Hant" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -1139,7 +1139,7 @@ function toggleTheme(){
   document.getElementById('themeBtn').textContent=next==='dark'?'☀️':'🌙';
 }
 (()=>{
-  const s=localStorage.getItem('theme')||'dark';
+  const s=localStorage.getItem('theme')||'light';
   document.documentElement.setAttribute('data-theme',s);
   document.getElementById('themeBtn').textContent=s==='dark'?'☀️':'🌙';
 })();
